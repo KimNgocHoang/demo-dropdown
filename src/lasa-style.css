@@ -1,0 +1,424 @@
+/* LASA Management System Styles */
+
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  height: 100vh;
+  width: 100%;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+.app-container {
+  padding: 0;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* DataGrid Table Styles */
+#data-grid-demo {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  width: calc(100% - 20px) !important;
+  height: calc(100% - 20px) !important;
+  flex-grow: 1;
+  max-width: calc(100% - 20px) !important;
+  padding: 0 !important;
+  margin: 10px !important;
+  box-sizing: border-box;
+}
+
+.dx-datagrid {
+  background-color: white;
+  width: 100% !important;
+  height: 100% !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.dx-datagrid-headers {
+  background-color: #f8f8f8;
+  color: #333;
+  font-weight: 600;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.dx-datagrid-rowsview {
+  height: 100% !important;
+  flex: 1 1 auto !important;
+  min-height: 500px;
+}
+
+.dx-datagrid-rowsview .dx-row {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dx-datagrid-rowsview .dx-row:hover {
+  background-color: #f5f5f5;
+}
+
+.dx-datagrid-rowsview .dx-row-alt {
+  background-color: #fafafa;
+}
+
+
+/* Table column widths */
+.dx-datagrid-headers .dx-datagrid-table .dx-row > td,
+.dx-datagrid-rowsview .dx-datagrid-table .dx-row > td {
+  padding: 10px 12px;
+}
+
+/* Action column (Edit/Delete) */
+.dx-datagrid-headers .dx-datagrid-table .dx-row > td:last-child,
+.dx-datagrid-rowsview .dx-datagrid-table .dx-row > td:last-child {
+  width: 150px;
+  text-align: center;
+}
+
+/* Edit/Delete links */
+td a {
+  color: #1890ff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+/* Popup Styles */
+.dx-popup-wrapper .dx-popup-title {
+  background-color: white;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.dx-popup-wrapper .dx-popup-content {
+  padding: 20px;
+}
+
+.dx-popup-wrapper .dx-closebutton {
+  border: none;
+  background: transparent;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.dx-popup-wrapper .dx-closebutton .dx-icon {
+  color: #333;
+  font-size: 16px;
+}
+
+/* Form Fields */
+.dx-field {
+  margin-bottom: 20px;
+}
+
+.dx-field-label {
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.dx-field-label .required-marker {
+  color: #f44336;
+  margin-left: 4px;
+}
+
+.dx-field-error {
+  color: #f44336;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* Custom Field Styles (as seen in image) */
+.field-column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.label-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.label-container label {
+  font-weight: 500;
+}
+
+.required-marker {
+  color: #f44336;
+  margin-left: 2px;
+}
+
+/* Dropdown and Input Controls */
+.dx-dropdownbox {
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+  height: 36px;
+}
+
+.dx-dropdownbox-popup-wrapper .dx-list {
+  border: none;
+}
+
+.dx-dropdownbox-popup-wrapper .dx-list-item {
+  padding: 10px 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dx-dropdownbox-popup-wrapper .dx-list-item:hover {
+  background-color: #f5f5f5;
+}
+
+.dx-dropdownbox-popup-wrapper .dx-list-item.dx-list-item-selected {
+  background-color: #e6f7ff;
+  color: #1890ff;
+}
+
+/* TagBox (Multi-select dropdown) Styles */
+.dx-tagbox {
+  border: 1px solid #c4c4c4;
+  border-radius: 4px;
+  min-height: 36px;
+}
+
+.dx-tagbox .dx-tag {
+  background-color: #f0f0f0;
+  border-radius: 2px;
+  margin: 2px;
+  padding: 4px 8px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.dx-tagbox .dx-tag-content {
+  padding-right: 20px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.dx-tagbox .dx-tag-remove-button {
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 50%;
+  background: #ccc;
+  color: white;
+  font-size: 10px;
+  margin-left: 4px;
+}
+
+.dx-tagbox .dx-tag-remove-button:hover {
+  background: #bbb;
+}
+
+/* Buttons */
+.dx-button {
+  border-radius: 4px;
+  height: 36px;
+  min-width: 80px;
+  font-weight: 500;
+}
+
+.dx-button.dx-button-success {
+  background-color: #36A1B6;
+  color: white;
+  border: none;
+}
+
+.dx-button.dx-button-success:hover {
+  background-color: #2a8795;
+}
+
+.dx-button.dx-button-normal {
+  background-color: white;
+  color: #333;
+  border: 1px solid #d9d9d9;
+}
+
+.dx-button.dx-button-normal:hover {
+  background-color: #f5f5f5;
+}
+
+/* Action Buttons in Popup */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.action-btn {
+  height: 36px;
+  border-radius: 4px;
+  padding: 0 15px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.action-btn.save-btn {
+  background-color: #36A1B6;
+  color: white;
+  border: none;
+}
+
+.action-btn.save-btn:hover {
+  background-color: #2a8795;
+}
+
+.action-btn.cancel-btn {
+  background-color: white;
+  color: #333;
+  border: 1px solid #d9d9d9;
+}
+
+.action-btn.cancel-btn:hover {
+  background-color: #f5f5f5;
+}
+
+/* Selected Tags in TagBox */
+.tagbox-item {
+  display: inline-block;
+  background-color: #f0f0f0;
+  padding: 4px 8px;
+  margin: 2px;
+  border-radius: 2px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Medication Pill Styling */
+.medication-pill {
+  display: inline-block;
+  background-color: #e0e0e0;
+  color: #333;
+  padding: 8px 16px;
+  margin: 3px 6px 3px 0;
+  border-radius: 6px;
+  font-size: 14px;
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  font-weight: normal;
+}
+
+.tagbox-item .close-btn {
+  margin-left: 6px;
+  cursor: pointer;
+  color: #999;
+  font-weight: bold;
+}
+
+.tagbox-item .close-btn:hover {
+  color: #666;
+}
+
+/* Add New Button Style */
+.dx-datagrid-addrow-button {
+  margin-top: 10px;
+  color: white;
+}
+
+
+/* Add button (+ symbol) in the image */
+.dx-datagrid-addrow-button, 
+button.dx-button.dx-button-mode-contained.dx-button-normal.dx-widget.dx-button-has-icon {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.dx-icon.dx-icon-plus {
+  font-size: 20px;
+}
+
+/* Ensure grid fills available space */
+.dx-datagrid,
+.dx-datagrid-container,
+.dx-datagrid-rowsview {
+  width: 100% !important;
+}
+
+/* Fix for datagrid height */
+.dx-datagrid-container {
+  height: 100% !important;
+  flex: 1 1 auto !important;
+}
+
+.dx-scrollable-container {
+  height: 100% !important;
+  max-height: none !important;
+}
+
+.dx-scrollable-content {
+  height: 100% !important;
+}
+
+/* Fix for columns */
+.dx-datagrid-content .dx-datagrid-table {
+  width: 100% !important;
+  table-layout: fixed;
+}
+
+.dx-datagrid-content .dx-datagrid-table .dx-row > td {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Edit/Delete column */
+.dx-datagrid-content .dx-datagrid-table .dx-row > td:last-child {
+  text-align: center;
+}
+
+/* Extra styles for Edit/Delete links */
+.edit-link, .delete-link {
+  color: #1890ff;
+  text-decoration: none;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.delete-link {
+  color: #ff4d4f;
+}
+
+.edit-link:hover, .delete-link:hover {
+  text-decoration: underline;
+}

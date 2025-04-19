@@ -1,0 +1,36 @@
+
+  
+/* App.css */
+.dx-popup-title {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.dx-popup-content {
+  padding-top: 20px;
+}
+
+.dx-tagbox .dx-texteditor-input {
+  padding: 10px;
+}
+
+.dx-field-item-label-text {
+  font-weight: 500;
+}
+/* App.css */
+.compact-form .dx-field-item {
+  margin-bottom: 8px !important;
+}
+
+.compact-form .dx-field-item-label {
+  font-weight: 500;
+}
+/* App.css */
+/* Remove green border around modified cells */
+.dx-datagrid-rowsview .dx-data-row .dx-cell-modified::after,
+.dx-datagrid-rowsview .dx-data-row .dx-datagrid-invalid::after {
+  border: none !important;
+  box-shadow: none !important;
+  content: none !important;
+}
+
